@@ -23,4 +23,7 @@ describe("StringCalculator Test cases", () => {
   test("given 2\n7,3\n8 to return 20", () => {
     expect(StringCalculator("2\n7,3\n8")).toBe(20);
   });
+  test("given //;\n1;2 to return 3", () => {
+    expect(StringCalculator("//;\n1;2")).toBe(3);
+  });
 });
