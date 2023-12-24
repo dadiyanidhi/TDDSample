@@ -14,4 +14,7 @@ describe("StringCalculator Test cases", () => {
   test("given 4,6 to return 10", () => {
     expect(StringCalculator("4,6")).toBe(10);
   });
+  test("given 1,2,3,4 to return 10", () => {
+    expect(StringCalculator("1,2,3,4")).toBe(10);
+  });
 });
