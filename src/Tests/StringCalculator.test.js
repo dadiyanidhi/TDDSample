@@ -26,4 +26,10 @@ describe("StringCalculator Test cases", () => {
   test("given //;\n1;2 to return 3", () => {
     expect(StringCalculator("//;\n1;2")).toBe(3);
   });
+  test("given -1 to return Error", () => {
+    expect(StringCalculator("-1")).toThrow("negatives not allowed :-1");
+  });
+  test("given -1,-2 to return Error", () => {
+    expect(StringCalculator("-1,-2")).toThrow("negatives not allowed :-1,-2");
+  });
 });
